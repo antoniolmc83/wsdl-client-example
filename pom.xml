@@ -75,7 +75,7 @@
 					<generatePackage>com.almc.ws.soap.wsdlclientexample.wsdl</generatePackage>
 					<schemas>
 						<schema>
-							<url>http://globalcurrencies.xignite.com/xGlobalCurrencies.asmx?wsdl</url>
+							<url>http://localhost:8080/ws/countries.wsdl</url>
 						</schema>
 					</schemas>
 				</configuration>

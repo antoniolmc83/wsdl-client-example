@@ -18,7 +18,8 @@ public class WsdlClientExampleApplication {
 	@Bean
 	public String text(CurrencyWSDLService currencyWSDLService) {
 
-		currencyWSDLService.getHistoricalValue();
+//		currencyWSDLService.getHistoricalValue();
+		currencyWSDLService.getCountry();
 
 		return "";
 	}

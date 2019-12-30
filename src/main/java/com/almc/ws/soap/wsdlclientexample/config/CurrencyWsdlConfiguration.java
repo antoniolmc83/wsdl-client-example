@@ -14,15 +14,17 @@ public class CurrencyWsdlConfiguration {
         // this package must match the package in the <generatePackage> specified in
         // pom.xml
         marshaller.setContextPath("com.almc.ws.soap.wsdlclientexample.wsdl");
+
         return marshaller;
     }
 
     @Bean
     public CurrencyWSDLService countryClient(Jaxb2Marshaller marshaller) {
         CurrencyWSDLService client = new CurrencyWSDLService();
-        client.setDefaultUri("http://globalcurrencies.xignite.com/xGlobalCurrencies.asmx");
+        client.setDefaultUri("http://localhost:8080/ws");
         client.setMarshaller(marshaller);
         client.setUnmarshaller(marshaller);
+
         return client;
     }
 }
